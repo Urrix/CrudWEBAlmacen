@@ -11,6 +11,7 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { ComprasComponent } from './compras/compras.component';
 import { NavbarAdmiComponent } from './navbar-admi/navbar-admi.component';
 import { NavbarClienteComponent } from './navbar-cliente/navbar-cliente.component';
+import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NavbarClienteComponent } from './navbar-cliente/navbar-cliente.componen
     ComprasComponent,
     NavbarAdmiComponent,
     NavbarClienteComponent,
+    ProductosComponent,
   ],
   imports: [
     BrowserModule,
