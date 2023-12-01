@@ -5,21 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InventarioComponent } from './inventario/inventario.component';
-import { ClientesComponent } from './clientes/clientes.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ComprasComponent } from './compras/compras.component';
+import { NavbarAdmiComponent } from './navbar-admi/navbar-admi.component';
+import { NavbarClienteComponent } from './navbar-cliente/navbar-cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InventarioComponent,
-    ClientesComponent,
     HomeComponent,
     NavbarComponent,
     ServiciosComponent,
     ComprasComponent,
+    NavbarAdmiComponent,
+    NavbarClienteComponent,
   ],
   imports: [
     BrowserModule,
