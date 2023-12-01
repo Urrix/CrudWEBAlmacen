@@ -1,0 +1,39 @@
+<div class="card-container" style="display: flex; flex-wrap: wrap;">
+  <div class="card" style="width: 18rem; margin: 10px;" *ngFor="let item of dataInventario">
+    <div class="card-body">
+      <h5 class="card-title">{{item.Nombre}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{item.Marca}}</h6>
+      <p class="card-text">Precio: ${{item.Precio}}</p>
+      <p class="card-text">Stock: {{item.Stock}}</p>
+      <p class="card-text"> ID: {{item.IDrefaccion}}</p>
+      <p class="card-text">Proveedor: {{item.pnombre}}</p>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-outline-success" routerLink="/agregarin" routerLinkActive="active">Agregar Producto</button>
+<br><br>
+<h3>Detalles de Inventario</h3>
+<br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Stock</th>
+      <th scope="col">Proveedor</th>
+      <th scope="col">Ultima Compra</th>
+      <th scope="col">Ultimo Pago</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of dataInventario">
+      <td scope="row">{{item.Nombre}}</td>
+      <td>{{item.Marca}}</td>
+      <td>{{item.Stock}}</td>
+      <td>{{item.Proveedor}}</td>
+      <td>{{item.UltimaCompra}}</td>
+      <td>{{item.UltimoPago}}</td>
+    </tr>
+  </tbody>
+</table>
